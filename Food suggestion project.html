@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food suggestion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        footer {
+            background-color: #000000;
+            padding: 1em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div style='background-color : #d36602' id='nav-change'>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand icon-name" href="#" id='top-name'>
+                <img class='logo-image' style='height: 80px; width: 80px; margin-left:10px;' src='https://res.cloudinary.com/dkle7cunf/image/upload/fl_preserve_transparency/v1719048509/hand-drawn-hungry-emoji-illustration_whkvmh.jpg?_s=public-apps' />
+                DELICIOUS
+            </a>
+            <button class="navbar-toggler" id='nav-btn' type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active top-p" id='top-text' href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link top-p" id='top-price' href="#">Profile</a>
+                    <a class="nav-item nav-link top-p" href="#">
+                        <button id='btn-bg' onclick="changeThemeClick()">
+                            Change Theme
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class='bg' id='changeTheme'>
+        <h1 class='h1' id='head'>Delicious Eats!!!</h1>
+        <p class='para' id='head-para'>Welcome to Delicious Eats, the app that brings
+            you personalized food suggestions based on your tastes, preferences, and cravings.
+            there you're looking for a quick snack or planning a gourmet meal,
+            we've got you covered!"</p>
+        <div class='div-img'>
+            <img id='changeImg' class='im' src="https://res.cloudinary.com/dkle7cunf/image/upload/fl_preserve_transparency/v1719121583/fresh-healthy-fruit-bowl-with-blueberries-strawberries-generative-ai_kubbn6.jpg?_s=public-apps" alt="Paris">
+            <div class='card-cont' id='change-card'>
+                <div class='div-cont'>
+                    <label htmlFor='text'>Foodie Name:</label>
+                    <input type='text' id='text' />
+                    <p style='color: red' id='errorName'></p>
+                </div>
+                <div class='div-cont'>
+                    <label htmlFor='password'>Password:</label>
+                    <input type='password' id='password' />
+                    <p style='color: red' id='errorPassword'></p>
+                </div>
+                <div class='div-btn'>
+                    <p class="btn-p">Click me</p>
+                    <button onClick='clickme()'><img class="icon" src='https://res.cloudinary.com/dkle7cunf/image/upload/fl_preserve_transparency/v1718895225/3d-burger-with-cartoon-character-features_iugyvy.jpg?_s=public-apps' /></button>
+                </div>
+            </div>
+        </div>
+        <div id='displaystyle' style="display: none">
+            <p id='Display'></p>
+            <button class="btn bg-danger" data-toggle="modal" data-target="#exampleModal">get started</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                                Favourite Dish Image
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <input type='text' id='dishName' placeholder="Enter your favourite dish..." />
+                            <button onclick="fetchurl()">Get Dish</button><br>
+                            <div id='dishImage'></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Delicious Eats. All rights reserved.</p>
+        <p><a href="#about">About Us</a> | <a href="#contact">Contact Us</a> | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>

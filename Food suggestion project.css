@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.logo-image {
+    margin-top: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-inside {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-button {
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bg {
+    background-image: url('https://t4.ftcdn.net/jpg/02/92/47/87/360_F_292478791_MRWCQSrVTjh3TMOQ6d6gElLD8dUGdAkp.jpg');
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1 {
+    font-family: "Josefin Slab", Rockwell, "Courier New", serif;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 70px;
+}
+
+.para {
+    padding-top: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    margin: 50px;
+}
+
+.img {
+    width: 100px;
+    height: auto;
+    animation: dance 2s infinite ease-in-out;
+    text-align: left;
+}
+
+.im {
+    width: 700px;
+    height: 300px;
+    margin-top: 130px;
+}
+
+@keyframes dance {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.div-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.div-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 8px;
+}
+
+label {
+    margin-top: 10px;
+    padding-bottom: 8px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.icon-name {
+    font-weight: bold;
+    font-family: 'Bree serif';
+    font-size: 40px;
+}
+
+input {
+    border: 0px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.card-cont {
+    background-image: url('https://img.freepik.com/premium-photo/blurred-smoke-black-background_23-2147611845.jpg');
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 0 0 10px #000000,
+        0 0 50px #ffffff,
+        0 0 100px #ffffff;
+}
+
+.card-shadow {
+    box-shadow: 0 0 0 10px #000000,
+        0 0 50px #000000,
+        0 0 100px #000000;
+}
+
+.icon {
+    width: 70px;
+    height: 100px;
+}
+
+button {
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.btn-p {
+    color: #ffffff;
+    font-family: 'roboto';
+    font-weight: bold;
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.div-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.displayBox {
+    background-color: #fff0f5;
+    font-family: 'Bree';
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+    padding: 15px;
+    border: 10px solid #e17f93;
+    width: 500px;
+    margin-left: 180px;
+    border-radius: 15px;
+}
+
+.back-gradient {
+    background-image: url('https://res.cloudinary.com/dkle7cunf/image/upload/fl_preserve_transparency/v1719066601/flat-lay-frame-with-delicious-breakfast-copy-space_sajpxk.jpg?_s=public-apps');
+    animation: bgChange 50s linear infinite;
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsFHMwDy_2pMZbqyCzJP2STA-gz3pizfSDyg&s');
+    }
+
+    20% {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrftRQcb2-Sb9POWIESQjCAICp7MzQ3iUrJQ&s');
+    }
+
+    25% {
+        background-image: url('https://img.freepik.com/free-photo/abstract-blur-coffee-shop_1203-8412.jpg');
+    }
+
+    45% {
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/008/660/558/small/organic-food-background-hand-drawn-concept-free-vector.jpg');
+    }
+
+    50% {
+        background-image: url('https://img.freepik.com/free-photo/bread-slices-with-topping-tomato-cheese-olives-white-table_23-2148194999.jpg');
+    }
+
+    70% {
+        background-image: url('https://img.freepik.com/free-photo/side-close-up-view-vegetables-lemon-oil-onion-garlic-bell-peppers-tomatoes-with-pedicels_140725-73605.jpg');
+    }
+
+    75% {
+        background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3M5My1hay0yNDkzXzEuanBn.jpg');
+    }
+
+    95% {
+        background-image: url('https://as1.ftcdn.net/v2/jpg/03/10/62/74/1000_F_310627439_IqHtG0pTsyGFANnqDmFl7kH31PAChQAq.jpg');
+    }
+}
+
+
+@media (max-width:768px) {
+    .im {
+        width: 200px;
+        height: 180px;
+        margin-top: 30px;
+    }
+
+    .card-cont {
+        border-radius: 15px;
+        padding: 5px;
+        width: 200px;
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    label {
+        margin-top: 5px;
+        padding-bottom: 2px;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: cursive;
+        font-size: 20px;
+    }
+
+    input {
+        border: 0px;
+        font-weight: bold;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    footer {
+        background-color: #000000;
+        height: auto;
+    }
+
+    .btn-p {
+        margin-top: 5px;
+        margin-right: 1px;
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .bg {
+        height: 300%;
+        padding: 15px;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .para {
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 0px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        padding-top: 10px;
+        font-family: 'Roboto';
+    }
+
+    .im {
+        width: 300px;
+        height: 200px;
+        margin-top: 30px;
+        animation: dance 2s infinite ease-in-out;
+    }
+
+    .div-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .img {
+        padding-bottom: 10px;
+        width: 70px;
+        height: 100px;
+    }
+
+    .displayBox {
+        font-size: 20px;
+        font-weight: bold;
+        color: #000000;
+        margin-top: 20px;
+        padding: 5px;
+        border: 10px solid #e17f93;
+        width: 200px;
+        margin-left: 50px;
+        border-radius: 15px;
+    }
+
+    .icon-name {
+        font-size: 20px;
+    }
+
+    .card-cont {
+        border-radius: 15px;
+        padding: 25px;
+        width: 200px;
+        height: 340px;
+        margin-top: 30px;
+    }
+
+    label {
+        margin-top: 5px;
+        padding-bottom: 5px;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: cursive;
+        font-size: 20px;
+    }
+
+    input {
+        border: 0px;
+        font-weight: bold;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .btn-p {
+        margin-top: 15px;
+        margin-right: 1px;
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 70px;
+    }
+
+    .bbbb {
+        background-color: #ffffff;
+    }
+
+}
